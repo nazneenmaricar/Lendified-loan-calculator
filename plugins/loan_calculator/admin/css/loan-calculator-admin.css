@@ -1,0 +1,87 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+input[type="text"], input[type="number"], textarea {
+	flex: 5;
+	margin: .3rem 0;
+}
+
+label { 
+	padding-right: 2rem;
+	flex: 2;
+}
+input {
+	margin: .3rem 0;
+}
+
+.settings-group {
+ 	padding: 20px;
+ 	border: 1px solid #848484;
+ 	margin: 0 0 30px;
+ 	box-sizing: border-box;
+}
+
+.form-table th {
+ 	padding-right: 40px;
+ 	width: initial;
+}
+.flex {
+	display: flex;
+}
+.flex-end {
+	justify-content: flex-end;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.margin-left-auto {
+	margin-left: auto;
+}
+.padding-bottom-sm {
+	padding-bottom: .5rem;
+}
+.padding-right-lrg {
+	padding-right: 4rem;
+}
+.margin-right-sm {
+	margin-right: 2rem;
+}
+
+.width-25 {
+	width: 24%;
+}
+.width-50 {
+	width: 49%;
+}
+.width-100 {
+	width: 100%;
+}
+.sub-label {
+	padding-right: 1rem;
+}
+.margin-top-none {
+	margin-top: 0;
+}
+.block {
+	display: block;
+}
+.info-code {
+	background-color: #d3d3d3;
+	display: inline-block;
+	margin: 0;
+}
+h2 {
+	border-bottom: 1px solid #848484;
+	padding-bottom: 10px;
+}
+.bold {
+	font-weight: bold;
+}
+.padding-top-md {
+	padding-top: 30px;
+}

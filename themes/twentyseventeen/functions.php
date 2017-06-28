@@ -564,3 +564,12 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+
+
+// function wp_add_scripts() {
+//   //wp_register_script('calculator-script', );
+//   wp_enqueue_script('calculator-script', get_plugins_url('loan_calculator').'/public/js/test.js', array(), '111', true);
+// }
+
+// add_action( 'wp_enqueue_scripts', 'wp_add_scripts' );
