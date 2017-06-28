@@ -1,37 +1,86 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>JS Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JS Calculator</title>
 
-      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-      <link rel="stylesheet" href="assets/styles.css">
-  </head>
-  <body>
-    <div class="slider-container flex flex-col align-center">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
 
-      <label for="amount">How much do you need?</label>
-      <input type="text" id="amount" readonly>
-      <div id="slider-amount" class="slider"></div>
+<body>
+  <div class="cal-plugin flex-media dir-row-media just-cont-btw-media">
+    <section class="payment flex-media dir-col-media just-cont-cent just-cont-btw-media">
 
-      <label for="length">How long do you need it?</label>
-      <input type="text" id="length" readonly>
-      <div id="slider-length" class="slider"></div>
-      <div>Minimum payment is $<span id="minimum-payment"></div>
-      <div>Maximum payment is $<span id="maximum-payment"></div>
+      <div>
+        <label for="amount"> How much do you need?</label>
+        <input type="text" id="amount" readonly>
+        <div id="slider-amount"></div>
+      </div>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <div>
+        <label for="term">How long do you need it?</label>
+        <input type="text" id="term" class="no-border" readonly>
+        <div id="slider-term"></div>
+      </div>
 
-      <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> -->
+      <div>
 
-      <script type="text/javascript" src="js/main.js"></script>
-      <script type="text/javascript" src="js/main_calculator.js"></script>
+        <label for="total-loan-amount">Your estimated bi-weekly payment <span role="tooltip" class="fa fa-question-circle-o" aria-hidden="true" title="<?php echo get_option('payment_popup'); ?>"></span> </label>
 
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+        <p> <span id="minimum-payment"></span> - <span id="maximum-payment"></span> </p>
+        <a href="<?php echo get_option('button_link'); ?>" class="button">
+          Get Your Free Quote
+        </a>
+      </div>
+    </section>
 
+    <section class=" bar-graph flex-media dir-col-media just-cont-btw-media">
+      <h3 id="chart_heading"> With Lendified you could save up to <span class="text-green">$13,015</span></h3>
+      <div class="outer-graph">
+        <div class="inner-graph">
 
-  </body>
+          <div class="outer-bar-1 flex dir-col">
+            <div class="bar-1-title">
+              <p> Lendified </p>
+            </div>
+            <div class="bar-1-column">
+              <p class="column-p lendified-price" id="bar-one-cost"></p>
+            </div>
+          </div>
+
+          <div class="outer-bar-2 flex dir-col">
+            <div class="bar-2-title">
+              <p class="hidden title-p">
+                Other Online Lenders
+              </p>
+            </div>
+            <div class="bar-2-column">
+              <p class="column-p comp-1-price" id="bar-two-cost"></p>
+            </div>
+          </div>
+
+          <div class="outer-bar-3 flex dir-col">
+            <div class="bar-3-title">
+              <p class="hidden title-p">
+              Merchant Advance
+              </p>
+            </div>
+            <div class="bar-3-column">
+              <p class="column-p comp-2-price" id="bar-three-cost"></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <h6>Estimated Total Interest Cost <span role="tooltip" class="fa fa-question-circle-o" aria-hidden="true" title="<?php echo get_option('chart_popup'); ?>"></span> </h6>
+
+    </section>
+
+  </div>
+</body>
+
 </html>
