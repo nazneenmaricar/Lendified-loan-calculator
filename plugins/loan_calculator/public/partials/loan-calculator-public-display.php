@@ -43,7 +43,7 @@ if (!isset($option) || empty($option)) {
 
       <div>
         <label for="term"><?php echo get_option('term_label'); ?>
-          <span role="tooltip" class="fa fa-question-circle-o" aria-hidden="true" title="<?php echo get_option('payment_popup'); ?>"></span> </label>
+          <span role="tooltip" class="fa fa-question-circle-o" aria-hidden="true" title="<?php echo get_option('term_popup'); ?>"></span> </label>
         <input type="text" id="term" class="no-border" readonly>
         <div id="slider-term"></div>
       </div>
