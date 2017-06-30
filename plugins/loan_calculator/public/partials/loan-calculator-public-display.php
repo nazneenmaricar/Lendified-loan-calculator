@@ -43,13 +43,13 @@ if (!isset($option) || empty($option)) {
 
       <div>
         <label for="term"><?php echo get_option('term_label'); ?>
-          <span role="tooltip" class="fa fa-question-circle-o" aria-hidden="true" title="<?php echo get_option('term_popup'); ?>"></span> </label>
+          <span role="tooltip" class="fa fa-question-circle-o plugin-tooltip" aria-hidden="true" title="<?php echo get_option('term_popup'); ?>"></span> </label>
         <input type="text" id="term" class="no-border" readonly>
         <div id="slider-term"></div>
       </div>
 
       <div>
-        <label for="total-loan-amount"><?php echo get_option('payment_label'); ?>   <span role="tooltip" class="fa fa-question-circle-o" aria-hidden="true" title="<?php echo get_option('payment_popup'); ?>"></span> </label>
+        <label for="total-loan-amount"><?php echo get_option('payment_label'); ?>   <span role="tooltip" class="fa fa-question-circle-o plugin-tooltip" aria-hidden="true" title="<?php echo get_option('payment_popup'); ?>"></span> </label>
 
         <p> <span id="minimum-payment"></span> -  <span id="maximum-payment"></span> </p>
         <a href="<?php echo get_option('button_link'); ?>" class="button button-display"><?php echo get_option('button_label'); ?></a>
@@ -98,7 +98,7 @@ if (!isset($option) || empty($option)) {
         </div>
       </div>
 
-      <h6><?php echo get_option('chart_label'); ?> <span role="tooltip" class="fa fa-question-circle-o" aria-hidden="true" title="<?php echo get_option('chart_popup'); ?>"></span> </h6>
+      <h6><?php echo get_option('chart_label'); ?> <span role="tooltip" class="fa fa-question-circle-o plugin-tooltip" aria-hidden="true" title="<?php echo get_option('chart_popup'); ?>"></span> </h6>
 
       <a href="<?php echo get_option('button_link'); ?>" class="button button-display-bottom"><?php echo get_option('button_label'); ?></a>
 
