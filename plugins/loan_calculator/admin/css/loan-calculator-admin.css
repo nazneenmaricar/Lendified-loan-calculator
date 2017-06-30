@@ -1,0 +1,185 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+input[type="text"], input[type="number"], textarea {
+	flex: 5;
+	margin: .3rem 0;
+	width: 100%;
+}
+input[type="button"] {
+	max-width: 100px;
+}
+
+textarea {
+	width: 100%;
+}
+
+label { 
+	padding-right: 2rem;
+	flex: 2;
+}
+input {
+	margin: .3rem 0;
+}
+
+h2 {
+	border-bottom: 1px solid #848484;
+	padding-bottom: 10px;
+}
+
+.settings-group {
+ 	padding: 20px;
+ 	border: 1px solid #848484;
+ 	margin: 0 0 30px;
+ 	box-sizing: border-box;
+}
+
+.form-table th {
+ 	padding-right: 40px;
+ 	width: initial;
+}
+.flex {
+	display: flex;
+}
+.flex-1 {
+	flex:1;
+}
+.flex-2 {
+	flex: 2;
+}
+input[type="number"].flex-4 {
+	flex: 4;
+}
+.flex-5 {
+	flex: 5;
+}
+.flex-10 {
+	flex:10;
+}
+.flex-col {
+	flex-direction: column;
+}
+.flex-end {
+	justify-content: flex-end;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.margin-left-auto {
+	margin-left: auto;
+}
+.padding-bottom-sm {
+	padding-bottom: .5rem;
+}
+.padding-right-lrg {
+	padding-right: 3rem;
+}
+.margin-right-sm {
+	margin-right: 2rem;
+}
+input[type="text"].margin-right-xs {
+	margin-right: 1rem;
+}
+
+.width-25 {
+	width: 24%;
+}
+.width-50 {
+	width: 49%;
+}
+.width-100 {
+	width: 100%;
+}
+.sub-label {
+	padding-right: 1rem;
+}
+.margin-top-none {
+	margin-top: 0;
+}
+.block {
+	display: block;
+}
+.info-code {
+	background-color: #d3d3d3;
+	display: inline-block;
+	margin: 0;
+}
+
+.bold {
+	font-weight: bold;
+}
+.padding-top-sm {
+	padding-top: 15px;
+}
+.instructions {
+	font-size: 10px;
+	padding-right: 20px;
+	margin: 5px 0;
+	color: #777777;
+	font-style: italic;
+}
+.flex-initial {
+	flex: initial;
+}
+
+.required-label:after {
+	content:' *';
+	color: red;
+}
+.percent-symbol {
+	padding-left: 5px;
+	margin: 0;
+	align-self: center;
+}
+.money-symbol {
+	padding-right: 5px;
+	margin: 0;
+}
+.month {
+	padding-left: 5px;
+	margin: 0;
+}
+.shortcode {
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin: 0;
+	padding-left: 10px;
+}
+@media only screen and (max-width:800px) {
+
+	.flex-col-mobile {
+		flex-direction: column;
+	} 
+	.flex-row-mobile {
+		flex-direction: row;
+	}
+	.width-100-mobile {
+		width: 100%;
+	}
+	.flex-align-start-mobile {
+		align-items: initial;
+	}
+	.width-50-mobile {
+		width: 50%;
+	}
+	.flex-wrap-mobile {
+		flex-wrap: wrap;
+	}
+	.padding-none-mobile {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width:1300px) {
+	.flex-col-tablet {
+		flex-direction: column;
+	} 
+	.flex-align-start-tablet {
+		align-items: initial;
+	}
+}

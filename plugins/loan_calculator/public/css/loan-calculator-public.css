@@ -1,0 +1,334 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+/*FONT FAMILY FOR THE PLUGIN*/
+
+@font-face {
+  font-family: "segoe-ui";
+  src: url("../assets/segoe-ui.ttf");
+}
+@font-face {
+  font-family: "segoe-ui-semibold";
+  src: url("../assets/segoe-ui-semibold.ttf");
+}
+/*FLEX*/
+
+.flex {
+  display: flex;
+}
+.dir-col {
+  flex-direction: column;
+}
+.dir-row {
+  flex-direction: row;
+}
+.just-cont-cent {
+  justify-content: center;
+}
+/*OVER WRITTING DEFAULT STYLE*/
+
+.cal-plugin .ui-state-default, .ui-widget-content .ui-state-default {
+  border: 2px solid #DEDD52;
+  background: #ffffff;
+  font-weight: normal;
+  color: #454545;
+}
+.cal-plugin .ui-corner-all {
+  border-radius: 100px;
+}
+.cal-plugin .ui-slider-horizontal {
+  height: .3em;
+}
+.cal-plugin .ui-slider-horizontal .ui-slider-handle {
+  top: -.55em;
+  margin-left: -.6em;
+  left: 0.5%
+}
+.cal-plugin .ui-widget.ui-widget-content {
+  background-color: #D6D6D6;
+  width: 100%;
+  border: none;
+}
+.cal-plugin .ui-slider .ui-slider-range {
+  border: none;
+  background-color: #DDDD52;
+}
+
+.cal-plugin .ui-slider .ui-slider-handle{
+  width: 1.5em;
+  height: 1.5em;
+}
+/*CUSTOM STYLE*/
+
+body {
+  cursor: pointer;
+ }
+
+.cal-plugin .text-green {
+  color: #CCDA52
+}
+
+.payment div {
+  margin-bottom: 3rem;
+}
+.payment label {
+  display: block;
+  text-align: center;
+  border: 0;
+  color: #5B5D62;
+  margin-bottom: 5px;
+  font-family: "segoe-ui", 'Lato', sans-serif;
+  font-weight: 700;
+}
+.payment input {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  font-family: "segoe-ui-semibold", 'Lato', sans-serif;
+  font-weight: 700;
+}
+.payment input[type="text"] {
+  border: none;
+  background: none;
+  color: #494949;
+  padding: 0em;
+}
+#amount {
+  font-size: 2em;
+}
+.payment p {
+  margin: 5px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #494949;
+  font-family: "segoe-ui-semibold", 'Lato', sans-serif;
+  font-weight: 700;
+}
+.button {
+  padding: 10px;
+  border: none;
+  background-color: #DDDD52;
+  color: white;
+  width: 100%;
+  text-decoration: none;
+  box-shadow: none;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "segoe-ui", 'Lato', sans-serif;
+}
+
+.button:visited, .button:active {
+  color: white;
+}
+
+.button-display {
+  display: none;
+}
+
+.button-display-bottom {
+  display: inline-block;
+}
+
+/*.display-inline-block {display: inline-block;}*/
+
+.fa {
+  color: #CBCBCB;
+  padding-left: 5px;
+}
+/*BAR GRAPH CUSTOM STYLE*/
+
+#chart_heading {display: none;}
+.bar-graph h3 {
+  /*margin-bottom: 5px;*/
+  color: #474D5A;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0em;
+  font-family: "segoe-ui-semibold", 'Lato', sans-serif;
+  font-weight: 700;
+}
+.bar-graph h6 {
+  text-align: center;
+  font-family: "segoe-ui-semibold", 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  color: #474D5A;
+  margin: 0px;
+}
+.bar-graph p {
+  color: #474D5A;
+  text-align: center;
+  margin: 0em;
+  font-size: 0.8em;
+}
+.bar-graph .hidden {
+  opacity: 0;
+}
+.bar-graph .outer-graph {
+  width: 100%;
+  border-bottom: 3px solid #828282;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+.bar-graph .inner-graph {
+  height: 350px;
+  width: 100%;
+  padding: 0 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+.bar-graph .outer-bar-1 {
+  width: 30%;
+  height: 0%;
+}
+.bar-graph .bar-1-title {
+  width: 100%;
+}
+.bar-graph .bar-1-column {
+  width: 100%;
+  background-color: #EEEFA2;
+  flex-grow: 1;
+}
+.bar-graph .outer-bar-2 {
+  width: 30%;
+  height: 0%;
+}
+.bar-graph .bar-2-title {
+  width: 100%;
+}
+.bar-graph .bar-2-column {
+  width: 100%;
+  background-color: #e5e5e5;
+  flex-grow: 1;
+}
+.bar-graph .outer-bar-3 {
+  width: 30%;
+  height: 0%;
+}
+.bar-graph .bar-3-title {
+  width: 100%;
+}
+.bar-graph .bar-3-column {
+  width: 100%;
+  background-color: #e5e5e5;
+  flex-grow: 1;
+}
+.bar-graph .column-p {
+  padding-top: 25px;
+  font-family: "segoe-ui", 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+.bar-graph .title-p {
+  padding-bottom: 10px;
+  font-size: 12px;
+  font-family: "segoe-ui", 'Lato', sans-serif;
+  font-weight: 700;
+}
+.bar-graph .lendified-price {
+  display: none;
+}
+.bar-graph .comp-1-price {
+  display: none;
+}
+.bar-graph .comp-2-price {
+  display: none;
+}
+
+/*POP UP CUSTOM STYLE*/
+/*.cal-plugin .ui-widget.ui-widget-content {margin: 10px;}*/
+.cal-plugin .ui-widget-shadow {
+  box-shadow: 1px 1px 3px #666666;
+}
+.bar-graph .ui-widget-content {
+  color: red;
+  font-weight: 700;
+  font-family: "segoe-ui", 'Lato', sans-serif;
+}
+.cal-plugin .ui-tooltip {
+  padding: 10px;
+}
+/*MEDIA QUERY FOR TABLET AND DESKTOP*/
+
+@media screen and (min-width: 600px) {
+  /*FLEX*/
+  .flex-media {
+    display: flex;
+  }
+  .dir-col-media {
+    flex-direction: column;
+  }
+  .dir-row-media {
+    flex-direction: row;
+  }
+  .just-cont-cent-media {
+    justify-content: center;
+  }
+  .just-cont-btw-media {
+    justify-content: space-between;
+  }
+  .just-cont-around-media {
+    justify-content: space-around;
+  }
+
+  /*CUSTOM STYLES FOR MEDIA QUERY*/
+
+  .payment div {
+    margin-bottom: 0rem;
+  }
+
+  .payment {
+    width: 30%;
+  }
+  .bar-graph {
+    width: 45%;
+  }
+  .outer-graph {
+    width: 380px;
+  }
+  .outer-bar-1 {
+    width: 100px;
+    height: 0%;
+  }
+  .outer-bar-2 {
+    width: 100px;
+    height: 0%;
+  }
+  .outer-bar-3 {
+    width: 100px;
+    height: 0%;
+  }
+
+  .cal-plugin .text-green-media {
+    color: #CCDA52
+  }
+
+  .cal-plugin .text-black-media {
+    color: black;
+  }
+  .bar-graph p {
+    font-size: 1em;
+  }
+  .bar-graph h6 {
+    padding: 5px;
+  }
+  /*.button-none-media {
+    display: none;
+  }*/
+  .button-display {
+    display: inline-block;
+  }
+
+  .button-display-bottom {
+    display: none;
+  }
+}
