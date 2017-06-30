@@ -22,7 +22,7 @@
  * @since      1.0.0
  * @package    Loan_Calculator
  * @subpackage Loan_Calculator/includes
- * @author     Red Academy <jwilliams8@me.com>
+ * @author     Red Academy
  */
 class Loan_Calculator_i18n {
 
@@ -41,7 +41,5 @@ class Loan_Calculator_i18n {
 		);
 
 	}
-
-
 
 }

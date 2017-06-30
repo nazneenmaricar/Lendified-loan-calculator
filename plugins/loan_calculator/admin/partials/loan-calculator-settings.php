@@ -16,7 +16,6 @@ function loan_calculator_settings() {
 	register_setting( 'loan-calculator-settings-group', 'loan_term_step');
 	register_setting( 'loan-calculator-settings-group', 'loan_term_default');
 
-
 	// Settings for interest rates
 	register_setting( 'loan-calculator-settings-group', 'bwp_interest_min');
 	register_setting( 'loan-calculator-settings-group', 'bwp_interest_max');
@@ -29,6 +28,7 @@ function loan_calculator_settings() {
 	register_setting( 'loan-calculator-settings-group', 'bar_3_label');
 
 	// Settings for pop-ups
+	register_setting( 'loan-calculator-settings-group', 'term_popup');
 	register_setting( 'loan-calculator-settings-group', 'payment_popup');
 	register_setting( 'loan-calculator-settings-group', 'chart_popup');
 
@@ -42,7 +42,6 @@ function loan_calculator_settings() {
 
 	// Misc
 	register_setting( 'loan-calculator-settings-group', 'button_link');
-
 
 	// Loan amount settings section
 	add_settings_section(
@@ -222,6 +221,7 @@ function interest_content() {
 
 // Pop-up HTML function
 function pop_up_content() {
+	create_text_area ('term_popup', 'Loan Term Pop-Up');
 	create_text_area ('payment_popup', 'Payment Pop-Up');
 	create_text_area ('chart_popup', 'Chart Pop-Up');
 }
