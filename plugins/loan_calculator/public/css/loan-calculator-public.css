@@ -63,9 +63,6 @@
 .cal-plugin .text-green {
   color: #CCDA52
 }
-/*.cal-plugin {
-  margin: 8% 5%;
-}*/
 
 .payment div {
   margin-bottom: 3rem;
@@ -283,10 +280,7 @@
   .payment div {
     margin-bottom: 0rem;
   }
-  .cal-plugin {
-    margin: 5%;
 
-  }
   .payment {
     width: 40%;
   }
@@ -311,6 +305,10 @@
 
   .cal-plugin .text-green-media {
     color: #CCDA52
+  }
+
+  .cal-plugin .text-black-media {
+    color: black;
   }
   .bar-graph p {
     font-size: 1em;
