@@ -161,7 +161,7 @@ jQuery(document).ready(function($) {
 function replaceIterestSavingPlaceholder() {
   $('#chart_heading').each(function() {
     var text = $(this).text();
-    $(this).html(text.replace('[%interest_saving%]', '<span id="amount-saved" class="text-green"></span>'));
+    $(this).html(text.replace('[%interest_saving%]', '<span id="amount-saved" class="text-green-media"></span>'));
   $('#chart_heading').show();
   });
 }

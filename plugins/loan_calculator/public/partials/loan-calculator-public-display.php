@@ -42,7 +42,8 @@ if (!isset($option) || empty($option)) {
       </div>
 
       <div>
-        <label for="term"><?php echo get_option('term_label'); ?></label>
+        <label for="term"><?php echo get_option('term_label'); ?>
+          <span role="tooltip" class="fa fa-question-circle-o" aria-hidden="true" title="<?php echo get_option('payment_popup'); ?>"></span> </label>
         <input type="text" id="term" class="no-border" readonly>
         <div id="slider-term"></div>
       </div>
@@ -56,7 +57,7 @@ if (!isset($option) || empty($option)) {
     </section>
 
     <section class="bar-graph flex-media dir-col-media just-cont-btw-media">
-        <h3 id="chart_heading"><?php echo get_option('chart_heading'); ?></h3>
+        <h3 class="text-green" id="chart_heading"><?php echo get_option('chart_heading'); ?></h3>
 
       <div class="outer-graph">
         <div class="inner-graph">
