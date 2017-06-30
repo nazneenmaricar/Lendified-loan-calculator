@@ -18,7 +18,7 @@
  *
  * @package    Loan_Calculator
  * @subpackage Loan_Calculator/public
- * @author     Red Academy <jwilliams8@me.com>
+ * @author     Red Academy
  */
 class Loan_Calculator_Public {
 
