@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       Loan Calculator
  * Plugin URI:        http://redacademy.com/
- * Description:       This plugin will allow you to add a loan calculator to your site where ever you'd like. You can customize the colors, silder ranges, pop-up content and interest rate percentages. Click "Testified" on the left hand menu to get started.
+ * Description:       This plugin will allow you to add a loan calculator to any page on your site. You can customize the interest rates, slider ranges, labels and pop-up content. Click “Loan Calculator” on the left hand menu to get started.
  * Version:           1.0.0
  * Author:            Red Academy
  * Author URI:        http://redacademy.com/
@@ -27,7 +27,7 @@
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
-	die;
+    die;
 }
 
 /**
@@ -35,8 +35,8 @@ if ( ! defined( 'WPINC' ) ) {
  * This action is documented in includes/class-loan-calculator-activator.php
  */
 function activate_loan_calculator() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-loan-calculator-activator.php';
-	Loan_Calculator_Activator::activate();
+    require_once plugin_dir_path( __FILE__ ) . 'includes/class-loan-calculator-activator.php';
+    Loan_Calculator_Activator::activate();
 }
 
 /**
@@ -44,8 +44,8 @@ function activate_loan_calculator() {
  * This action is documented in includes/class-loan-calculator-deactivator.php
  */
 function deactivate_loan_calculator() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-loan-calculator-deactivator.php';
-	Loan_Calculator_Deactivator::deactivate();
+    require_once plugin_dir_path( __FILE__ ) . 'includes/class-loan-calculator-deactivator.php';
+    Loan_Calculator_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_loan_calculator' );
@@ -68,8 +68,8 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-loan-calculator.php';
  */
 function run_loan_calculator() {
 
-	$plugin = new Loan_Calculator();
-	$plugin->run();
+    $plugin = new Loan_Calculator();
+    $plugin->run();
 
 }
 run_loan_calculator();
@@ -97,20 +97,20 @@ function loan_calculator_admin(){
     if (!current_user_can('manage_options')) {
         return;
     }
-  	require_once('admin/partials/loan-calculator-admin-display.php');
+    require_once('admin/partials/loan-calculator-admin-display.php');
 }
 
 // Creating plugin shortcode
 
 function generate_shortcode(){
-	require_once('public/partials/loan-calculator-public-display.php');
+    require_once('public/partials/loan-calculator-public-display.php');
 }
 add_shortcode('loan-calculator', 'generate_shortcode');
 
 function unconfigured_lendified_plugin_notice() {
 
     $option = get_option('bwp_interest_min');
-    if (isset($option) || !empty($option)) {
+    if (!isset($option) || empty($option)) {
     $class = 'notice notice-info';
     $message = __( "Loan Calculator successfully activated, click <a href='admin.php?page=loan_calculator'>here</a> to configure your settings.", "sample-text-domain" );
 

@@ -28,6 +28,7 @@ function loan_calculator_settings() {
 	register_setting( 'loan-calculator-settings-group', 'bar_3_label');
 
 	// Settings for pop-ups
+	register_setting( 'loan-calculator-settings-group', 'term_popup');
 	register_setting( 'loan-calculator-settings-group', 'payment_popup');
 	register_setting( 'loan-calculator-settings-group', 'chart_popup');
 
@@ -220,6 +221,7 @@ function interest_content() {
 
 // Pop-up HTML function
 function pop_up_content() {
+	create_text_area ('term_popup', 'Loan Term Pop-Up');
 	create_text_area ('payment_popup', 'Payment Pop-Up');
 	create_text_area ('chart_popup', 'Chart Pop-Up');
 }

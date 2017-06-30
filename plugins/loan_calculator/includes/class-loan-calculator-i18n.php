@@ -42,6 +42,4 @@ class Loan_Calculator_i18n {
 
 	}
 
-
-
 }

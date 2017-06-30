@@ -251,7 +251,7 @@
 }
 /*MEDIA QUERY FOR TABLET AND DESKTOP*/
 
-@media screen and (min-device-width: 600px) {
+@media screen and (min-width: 600px) {
   /*FLEX*/
   .flex-media {
     display: flex;
