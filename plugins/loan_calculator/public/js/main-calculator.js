@@ -69,9 +69,12 @@ jQuery(document).ready(function($) {
   }
 
   //Pop up
-    $( function() {
-      $( document ).tooltip();
-    } );
+  $( function() {
+     $( '.plugin-tooltip' ).tooltip();
+     $("#page").on('click', function(event) {
+       return true;
+     });
+   } );
 
   //Loan class constructor
   var Loan = function Loan(amount, term) {
