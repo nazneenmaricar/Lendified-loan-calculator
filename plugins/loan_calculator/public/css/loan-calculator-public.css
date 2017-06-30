@@ -38,10 +38,10 @@
   border-radius: 100px;
 }
 .cal-plugin .ui-slider-horizontal {
-  height: .2em;
+  height: .3em;
 }
 .cal-plugin .ui-slider-horizontal .ui-slider-handle {
-  top: -.5em;
+  top: -.55em;
   margin-left: -.6em;
   left: 0.5%
 }
@@ -54,7 +54,17 @@
   border: none;
   background-color: #DDDD52;
 }
+
+.cal-plugin .ui-slider .ui-slider-handle{
+  width: 1.5em;
+  height: 1.5em;
+}
 /*CUSTOM STYLE*/
+
+body {
+  cursor: pointer;
+ }
+
 .cal-plugin .text-green {
   color: #CCDA52
 }
@@ -125,6 +135,7 @@
 
 .fa {
   color: #CBCBCB;
+  padding-left: 5px;
 }
 /*BAR GRAPH CUSTOM STYLE*/
 
@@ -275,12 +286,11 @@
     margin-bottom: 0rem;
   }
 
-  }
   .payment {
-    width: 40%;
+    width: 30%;
   }
   .bar-graph {
-    width: 50%;
+    width: 45%;
   }
   .outer-graph {
     width: 380px;
@@ -296,6 +306,14 @@
   .outer-bar-3 {
     width: 100px;
     height: 0%;
+  }
+
+  .cal-plugin .text-green-media {
+    color: #CCDA52
+  }
+
+  .cal-plugin .text-black-media {
+    color: black;
   }
   .bar-graph p {
     font-size: 1em;
