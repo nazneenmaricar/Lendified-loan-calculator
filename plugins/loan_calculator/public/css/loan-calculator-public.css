@@ -60,6 +60,11 @@
   height: 1.5em;
 }
 /*CUSTOM STYLE*/
+
+body {
+  cursor: pointer;
+ }
+
 .cal-plugin .text-green {
   color: #CCDA52
 }
@@ -282,10 +287,10 @@
   }
 
   .payment {
-    width: 40%;
+    width: 30%;
   }
   .bar-graph {
-    width: 50%;
+    width: 45%;
   }
   .outer-graph {
     width: 380px;
